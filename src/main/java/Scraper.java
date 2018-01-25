@@ -7,14 +7,14 @@ public class Scraper {
 
     public static void main(String[] args) throws Exception {
         //ScrapeText();
-        //ScrapeHTML();
-        SplitIntoBlocks();
+        ScrapeHTML();
+        //SplitIntoBlocks();
     }
 
 
     public static void SplitIntoBlocks() throws Exception {
 
-        final Document document = Jsoup.connect("http://bit.ly/2zexx0L").get();
+        final Document document = Jsoup.connect("http://bit.ly/2BtqnF7").get();
         String ttOut = "";
 
         for(Element row : document.select("table tr")) {
